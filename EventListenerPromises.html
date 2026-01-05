@@ -1,0 +1,10 @@
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.addEventListener('click', () => {
+      console.log('Click Event');
+    });
+
+    Promise.resolve().then(() => console.log('Promise Resolved'));
+    console.log('End');
+  });
+</script>
