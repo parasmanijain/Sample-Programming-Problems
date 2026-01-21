@@ -1,0 +1,33 @@
+#menuBtn {
+  anchor-name: --menu;
+  padding: 10px 16px;
+}
+
+.dropdown {
+  position: absolute;
+  position-anchor: --menu;
+  top: anchor(bottom);
+  left: anchor(left);
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.15);
+  width: 160px;
+  display: none;
+}
+
+#menuBtn:hover + .dropdown {
+  display: block;
+}
+
+.dropdown div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown div:hover {
+  background: #f3f3f3;
+}

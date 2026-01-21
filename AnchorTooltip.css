@@ -1,0 +1,28 @@
+#infoBtn {
+  anchor-name: --info;
+  padding: 10px 16px;
+}
+
+.tooltip {
+  position: absolute;
+  position-anchor: --info;
+
+  top: anchor(bottom);
+  left: anchor(center);
+  translate: -50% 8px;
+
+  background: black;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+#infoBtn:hover + .tooltip {
+  opacity: 1;
+}

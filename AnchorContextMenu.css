@@ -1,0 +1,25 @@
+#file {
+  anchor-name: --file;
+  padding: 20px;
+  border: 1px dashed #aaa;
+  width: 200px;
+}
+
+.context-menu {
+  position: absolute;
+  position-anchor: --file;
+
+  top: anchor(bottom);
+  left: anchor(left);
+  margin-top: 6px;
+
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 140px;
+  display: none;
+}
+
+#file:hover + .context-menu {
+  display: block;
+}
